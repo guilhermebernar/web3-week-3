@@ -36,7 +36,7 @@ contract Webbb3 {
     ) public {
         require(msg.sender == owner, "Invalid sender");
 
-        if (currentVoting != 0) currentVoting++;
+        if (votings.length != 0) currentVoting++;
 
         Voting memory newVoting;
         newVoting.option1 = option1;
